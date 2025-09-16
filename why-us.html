@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eczane — Why Us?</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Minimal Nav -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo-section">
+        <div class="logo">
+          <a href="index.html" aria-label="Go to Home">
+            <img src="images/logo.png" alt="Eczane Logo" class="logo-image">
+          </a>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" id="home-link" class="add-to-cart-button" style="max-width: 140px; text-transform:none;">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero-section" style="text-align:center; padding: var(--spacing-2xl) var(--spacing-xl);">
+      <h1 id="why-title" style="font-family: 'Playfair Display', serif; font-size: 2.25rem; margin-bottom: var(--spacing-md); color: var(--text-primary);">Why Choose Eczane?</h1>
+      <p id="why-intro" style="color: var(--text-secondary); max-width: 800px; margin: 0 auto; line-height: 1.7;">
+        At Eczane, we combine premium healthcare products with concierge-level service. Our mission is to make
+        quality medicines accessible, transparent, and delivered with care. From curated inventory to expert
+        guidance, we focus on what matters most: your well-being.
+      </p>
+    </section>
+
+    <section class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--spacing-xl);">
+      <article class="product-card" style="padding: var(--spacing-xl);">
+        <h2 id="sec1-title" style="margin-bottom: var(--spacing-sm);">Trusted Quality</h2>
+        <p id="sec1-body" style="color: var(--text-secondary); line-height:1.7;">
+          We source only from verified suppliers. Each product is vetted for authenticity, storage conditions,
+          and expiration dates, so you always receive safe and effective medicines.
+        </p>
+      </article>
+      <article class="product-card" style="padding: var(--spacing-xl);">
+        <h2 id="sec2-title" style="margin-bottom: var(--spacing-sm);">Fast, Reliable Delivery</h2>
+        <p id="sec2-body" style="color: var(--text-secondary); line-height:1.7;">
+          From checkout to your doorstep, we keep it fast and predictable. Track your order and reach us anytime
+          via WhatsApp for instant support.
+        </p>
+      </article>
+      <article class="product-card" style="padding: var(--spacing-xl);">
+        <h2 id="sec3-title" style="margin-bottom: var(--spacing-sm);">Transparent Pricing</h2>
+        <p id="sec3-body" style="color: var(--text-secondary); line-height:1.7;">
+          No surprises. Clear pricing, fair discounts, and honest communication—because trust is the core of healthcare.
+        </p>
+      </article>
+      <article class="product-card" style="padding: var(--spacing-xl);">
+        <h2 id="sec4-title" style="margin-bottom: var(--spacing-sm);">Personal Assistance</h2>
+        <p id="sec4-body" style="color: var(--text-secondary); line-height:1.7;">
+          Not sure what to choose? Our assistant helps you find the right option and answers questions about products,
+          availability, and alternatives.
+        </p>
+      </article>
+    </section>
+
+    <section style="text-align:center; margin-top: var(--spacing-2xl);">
+      <a href="https://wa.me/79283837266" target="_blank" rel="noopener noreferrer" class="buy-button" style="max-width: 240px;" id="cta">
+        Message us on WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>&copy; 2025 Eczane. Premium Healthcare Solutions. · <a href="index.html" class="footer-link">Home</a></p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function() {
+      const LANG_KEY = 'medicineSeller-lang';
+      const lang = localStorage.getItem(LANG_KEY) || 'ru';
+      document.documentElement.setAttribute('lang', lang);
+      const t = {
+        en: {
+          home: 'Home',
+          title: 'Why Choose Eczane?',
+          intro: "At Eczane, we combine premium healthcare products with concierge-level service. Our mission is to make quality medicines accessible, transparent, and delivered with care. From curated inventory to expert guidance, we focus on what matters most: your well-being.",
+          s1t: 'Trusted Quality',
+          s1b: 'We source only from verified suppliers. Each product is vetted for authenticity, storage conditions, and expiration dates, so you always receive safe and effective medicines.',
+          s2t: 'Fast, Reliable Delivery',
+          s2b: 'From checkout to your doorstep, we keep it fast and predictable. Track your order and reach us anytime via WhatsApp for instant support.',
+          s3t: 'Transparent Pricing',
+          s3b: 'No surprises. Clear pricing, fair discounts, and honest communication—because trust is the core of healthcare.',
+          s4t: 'Personal Assistance',
+          s4b: 'Not sure what to choose? Our assistant helps you find the right option and answers questions about products, availability, and alternatives.',
+          cta: 'Message us on WhatsApp'
+        },
+        ru: {
+          home: 'Главная',
+          title: 'Почему выбирают Экзане?',
+          intro: 'В Экзане мы совмещаем премиальные медицинские товары с сервисом уровня консьерж. Наша миссия — сделать качественные лекарства доступными, прозрачными и доставленными с заботой. От тщательно подобранного ассортимента до экспертного сопровождения — мы сосредоточены на вашем благополучии.',
+          s1t: 'Гарантированное качество',
+          s1b: 'Мы работаем только с проверенными поставщиками. Каждый товар проходит проверку подлинности, условий хранения и сроков годности, чтобы вы получали безопасные и эффективные лекарства.',
+          s2t: 'Быстрая и надёжная доставка',
+          s2b: 'От оформления заказа до вашей двери — быстро и предсказуемо. Отслеживайте заказ и пишите нам в WhatsApp для моментальной поддержки.',
+          s3t: 'Прозрачные цены',
+          s3b: 'Никаких сюрпризов. Честные цены, справедливые скидки и открытая коммуникация — потому что доверие в здравоохранении важнее всего.',
+          s4t: 'Персональная помощь',
+          s4b: 'Не уверены, что выбрать? Наш помощник подскажет подходящий вариант и ответит на вопросы о товарах, наличии и альтернативах.',
+          cta: 'Написать нам в WhatsApp'
+        }
+      };
+      const dict = t[lang] || t.ru;
+      const byId = id => document.getElementById(id);
+      const set = (id, text) => { const el = byId(id); if (el) el.textContent = text; };
+      set('home-link', dict.home);
+      set('why-title', dict.title);
+      set('why-intro', dict.intro);
+      set('sec1-title', dict.s1t); set('sec1-body', dict.s1b);
+      set('sec2-title', dict.s2t); set('sec2-body', dict.s2b);
+      set('sec3-title', dict.s3t); set('sec3-body', dict.s3b);
+      set('sec4-title', dict.s4t); set('sec4-body', dict.s4b);
+      set('cta', dict.cta);
+    })();
+  </script>
+</body>
+</html>
+
+
